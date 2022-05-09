@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <style>
+        div {
+            Border: 1px solid #555;
+        }
+
+        #content,
+        #inside {
+            display: flex;
+            height: 470px;
+            width: 100%;
+        }
+
+        #inside {
+            height: calc(470px - 50px);
+        }
+
+        .left-sidebar {
+            display: block;
+            width: 20%;
+            /*  max-width: 150px; */
+            height: 100%;
+            /* position: fixed; */
+            top: 0;
+            left: 0;
+        }
+
+        .left-sidebar div {
+            height: 50.2px;
+            background: grey;
+        }
+
+        .right-sidebar {
+            display: block;
+            width: 80%;
+            border: none;
+        }
+
+        .right-sidebar header {
+            height: 50px;
+            background: lightblue;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .right-sidebar .intro {
+            width: 30%;
+            height: 100%;
+            border: none;
+        }
+
+
+        .right-sidebar #content {
+            width: 70%;
+            height: 100%;
+            border: none;
+        }
+    </style>
+    </head>
+
+    <body>
+        <div id="content">
+            <div class="left-sidebar">
+                <div>div</div>
+                <div>div</div>
+                <div>div</div>
+                <div>div</div>
+                <div>div</div>
+                <div>div</div>
+                <div>div</div>
+                <div>div</div>
+                <div>div</div>
+            </div>
+            <div class="right-sidebar">
+                <header>
+                    header
+                </header>
+                <div id="inside">
+                    <div class="intro">
+                    </div>
+                    <div class="content">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>
